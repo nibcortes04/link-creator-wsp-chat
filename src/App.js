@@ -1,16 +1,15 @@
-import logo from './assets/nuticon.svg';
-import './App.css';
+import Container from "react-bootstrap/Container";
+
+import { HomePage } from "./pages";
+
+import logo from "./assets/nuticon.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        Site under construction. :)
-        </p>
-      </header>
-    </div>
+    <Container fluid className="App px-0">
+      <HomePage />
+    </Container>
   );
 }
 
